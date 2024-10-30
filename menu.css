@@ -1,0 +1,31 @@
+/* Styles for the menu bar */
+.menu-bar {
+    background-color: #4CAF50; /* Green background */
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the menu items */
+    padding: 10px 0; /* Top and bottom padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.menu-bar a {
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding for the links */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.menu-bar a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .menu-bar {
+        flex-direction: column; /* Stack items on small screens */
+    }
+    .menu-bar a {
+        padding: 10px; /* Adjust padding */
+    }
+}
